@@ -58,17 +58,29 @@ a:hover {
 
 /* ===================   header  ================== */
 
-.header {
-    position: relative;
+.fixed-header {
+    position: sticky;
+    top: -26px;
+    z-index: 1;
     background-color: #e6f0ff;
-    height: 100vh;
+    padding-top: 26px;
 }
 
-.navbar {
+.fixed-header .navbar {
     display: flex;
     align-items: center;
-    padding-top: 38px;
+    padding: 12px 0;
 }
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: #e6f0ff;
+    height: calc(100vh - 90px);
+}
+
 
 .navbar ul {
     display: flex;
@@ -178,7 +190,7 @@ a:hover {
     margin-top: 70px;
 }
 
-.cliend .cliend-img a{
+.cliend .cliend-img a {
     display: flex;
     align-items: center;
     padding: 0 42px;
@@ -631,10 +643,15 @@ a:hover {
     width: 28px;
     height: 28px;
     border-radius: 3px;
+    background: #F9F9F9;
 }
 
 .footer .social .social-link:hover {
     background-color: #ededed;
+}
+
+.footer .social .social-link+.social-link {
+    margin-left: 16px;
 }
 
 .footer .row-bottom {
