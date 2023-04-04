@@ -5,15 +5,100 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- resetcss -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <!-- favicon -->
         <link
-            href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
+            rel="apple-touch-icon"
+            sizes="57x57"
+            href="./assets/favicon/apple-icon-57x57.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="60x60"
+            href="./assets/favicon/apple-icon-60x60.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-icon-72x72.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="76x76"
+            href="./assets/favicon/apple-icon-76x76.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="114x114"
+            href="./assets/favicon/apple-icon-114x114.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="120x120"
+            href="./assets/favicon/apple-icon-120x120.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="144x144"
+            href="./assets/favicon/apple-icon-144x144.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="152x152"
+            href="./assets/favicon/apple-icon-152x152.png"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-icon-180x180.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="192x192"
+            href="./assets/favicon/android-icon-192x192.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="96x96"
+            href="./assets/favicon/favicon-96x96.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta
+            name="msapplication-TileImage"
+            content="./assets/favicon/ms-icon-144x144.png"
+        />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- font -->
+        <link rel="preconnect" href="https:/fonts.googleapis.com" />
+        <link rel="preconnect" href="https:/fonts.gstatic.com" crossorigin />
+        <link
+            href="https:/fonts.googleapis.com/css2?family=Lato:wght@700&display=swap"
             rel="stylesheet"
         />
         <link rel="stylesheet" href="./assets/font/stylesheet.css" />
+
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="./assets/css/styles.css" />
+
         <title>Project</title>
     </head>
 
@@ -24,16 +109,16 @@
                 <div class="content">
                     <nav class="navbar">
                         <!-- logo -->
-                        <a href="#!">
+                        <a href="#">
                             <img src="./assets/img/Logo.svg" alt="" />
                         </a>
                         <!-- navigation -->
                         <ul>
-                            <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Faratuses</a></li>
-                            <li><a href="#!">Service</a></li>
-                            <li><a href="#!">listed</a></li>
-                            <li><a href="#!">Contact</a></li>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#Service">Service</a></li>
+                            <li><a href="#faratuses">Faratuses</a></li>
+                            <li><a href="#resources">Resources</a></li>
+                            <li><a href="#contact">Contact</a></li>
                         </ul>
                         <!-- action -->
                         <div class="action">
@@ -43,32 +128,29 @@
                     </nav>
                 </div>
             </header>
-            <header class="header">
+            <div class="header">
                 <div class="content">
                     <!-- hero -->
-                    <div class="hero">
-                        <div class="info">
-                            <p class="sub-title">Welcome to Besnik Agency</p>
-                            <h1 class="title">
-                                Discover a place you'll love to live.
-                            </h1>
-                            <div class="desc">
-                                Get the best real estate deals first, before
-                                they hit the mass market! HOT FORECLOSURE DEALS
-                                with one simple search.
-                            </div>
-
-                            <!-- call to action ( lời kêu gọi ) -->
-                            <div class="btn hero-cta">More About Us</div>
+                    <div class="info">
+                        <p class="sub-title">Welcome to Besnik Agency</p>
+                        <h1 class="title">
+                            Discover a place you'll love to live.
+                        </h1>
+                        <div class="desc">
+                            Get the best real estate deals first, before they
+                            hit the mass market! HOT FORECLOSURE DEALS with one
+                            simple search.
                         </div>
-                        <img
-                            src="./assets/img/hero-img.svg"
-                            alt="Discover a place you'll love to live."
-                            class="hero-img"
-                        />
+                        <!-- call to action ( lời kêu gọi ) -->
+                        <div class="btn hero-cta">More About Us</div>
                     </div>
+                    <img
+                        src="./assets/img/hero-img.svg"
+                        alt="Discover a place you'll love to live."
+                        class="hero-img"
+                    />
                 </div>
-            </header>
+            </div>
             <!-- cliend -->
             <div class="cliend">
                 <div class="content">
@@ -124,7 +206,7 @@
                 </div>
             </div>
             <!-- guider -->
-            <div class="guides">
+            <div class="guides" id="Service">
                 <div class="content">
                     <h2 class="title-2">How its works?</h2>
                     <p class="decs">
@@ -192,7 +274,7 @@
             </div>
 
             <!-- featured -->
-            <div class="featured">
+            <div class="featured" id="faratuses">
                 <div class="content">
                     <header>
                         <h2 class="sub-title">Featured Properties</h2>
@@ -346,7 +428,7 @@
             </div>
 
             <!-- stats -->
-            <div class="stats">
+            <div class="stats" id="resources">
                 <div class="content">
                     <div class="row">
                         <div class="img-block">
@@ -515,7 +597,7 @@
             </div>
 
             <!-- subscription -->
-            <div class="subscription">
+            <div class="subscription" id="contact">
                 <div class="content">
                     <div class="body-subscription">
                         <div class="info">
